@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular NLP Tasks</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>NLP Task Generator</h1>
+            <p>Select a module from your Python project.</p>
+        </header>
+
+        <div class="app-layout">
+            <aside class="sidebar">
+                <button class="task-btn active" data-task="eda">Task A: EDA Code</button>
+                <button class="task-btn" data-task="resume">Task B: Build Resume</button>
+                <button class="task-btn" data-task="interview">Task C: Interview Qs</button>
+                <button class="task-btn" data-task="summary">Task D: Summarize</button>
+            </aside>
+
+            <main class="content">
+                <div class="input-group">
+                    <label id="input-label" for="user-input">Enter the dataset name:</label>
+                    <textarea id="user-input" rows="4" placeholder="e.g., sales_data.csv"></textarea>
+                </div>
+
+                <button id="generate-btn">Run Module</button>
+
+                <div class="output-group">
+                    <label for="output-result">Output from Python Module:</label>
+                    <div class="loader" id="loader" style="display: none;">Processing...</div>
+                    <textarea id="output-result" rows="12" readonly></textarea>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

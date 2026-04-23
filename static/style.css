@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #1e1e2f;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #2a2a40;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    color: #00d2ff;
+}
+
+.app-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-btn {
+    padding: 15px;
+    background: #3a3a55;
+    color: #fff;
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.task-btn:hover {
+    background: #4a4a65;
+}
+
+.task-btn.active {
+    background: #00d2ff;
+    color: #1e1e2f;
+    font-weight: bold;
+    border: none;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    background: #1e1e2f;
+    color: #00d2ff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    color: #888;
+}
+
+#generate-btn {
+    padding: 15px;
+    background: #00d2ff;
+    color: #1e1e2f;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#generate-btn:hover {
+    background: #00b8e6;
+}
+
+.loader {
+    color: #00d2ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
